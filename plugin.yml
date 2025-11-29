@@ -1,0 +1,18 @@
+name: DungeonPlugin
+version: 1.0.0
+main: com.dungeon.plugin.DungeonPlugin
+api-version: '1.21'
+author: DungeonDev
+description: Plugin que gera dungeons complexas no Overworld
+
+commands:
+  dungeon:
+    description: Comandos administrativos das dungeons
+    usage: /dungeon <create|list|teleport|reload>
+    permission: dungeon.admin
+    aliases: [dg, dungeons]
+
+permissions:
+  dungeon.admin:
+    description: Permite usar comandos administrativos
+    default: op
